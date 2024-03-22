@@ -76,7 +76,7 @@ module Monday
         return "\"#{value}\"" unless single_word?(value)
         return value.to_json.to_json if value.is_a?(Hash)
 
-        value
+         "\"#{value}\""
       end
 
       def single_word?(word)
